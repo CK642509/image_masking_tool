@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\ck642509\\\\Desktop\\\\projects\\\\image_masking_tool\" -Recurse -Force | Select-Object FullName, @{Name='Type';Expression={if\\($_.PSIsContainer\\){'DIR'}else{'FILE'}}} | Sort-Object FullName | Format-Table -AutoSize)",
+      "Bash(npm run *)"
+    ]
+  }
+}
